@@ -1,12 +1,68 @@
-<select id="lang" class="langSelect" aria-label="Language">
-  <option value="tr">Türkçe</option>
-  <option value="en">English</option>
-  <option value="de">Deutsch</option>
-  <option value="fr">Français</option>
-  <option value="nl">Nederlands</option>
-  <option value="pt">Português</option>
-  <option value="es">Español</option>
-  <option value="ru">Русский</option>
-  <option value="zh">中文</option>
-  <option value="ja">日本語</option>
-</select>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayvoya</title>
+  <meta name="description" content="Ayvoya – ride booking, food ordering, and package delivery platform." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo">A</div>
+    <div>
+      <div class="name">Ayvoya</div>
+      <div class="tag" data-i18n="tagline">All-in-one platform</div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <label class="langLabel" for="lang" data-i18n="language">Language</label>
+    <select id="lang" class="langSelect">
+      <option value="tr">Türkçe</option>
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="nl">Nederlands</option>
+      <option value="pt">Português</option>
+      <option value="es">Español</option>
+      <option value="ru">Русский</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+    </select>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1 data-i18n="heroTitle">One app. Three services.</h1>
+    <p class="lead" data-i18n="heroLead">
+      Request rides, order food, and send packages with Ayvoya.
+    </p>
+  </section>
+
+  <section class="grid3">
+    <div class="card">
+      <h3 data-i18n="f1Title">Ride Booking</h3>
+      <p data-i18n="f1Desc">Fast and reliable ride-hailing.</p>
+    </div>
+    <div class="card">
+      <h3 data-i18n="f2Title">Food Delivery</h3>
+      <p data-i18n="f2Desc">Order from partner restaurants.</p>
+    </div>
+    <div class="card">
+      <h3 data-i18n="f3Title">Package Delivery</h3>
+      <p data-i18n="f3Desc">Door-to-door package transport.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>© Ayvoya</span>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
